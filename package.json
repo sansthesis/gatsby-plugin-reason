@@ -1,0 +1,22 @@
+{
+  "name": "gatsby-plugin-reason",
+  "version": "1.0.0",
+  "description": "Adds Reason support for Gatsby layouts and pages.",
+  "main": "index.js",
+  "dependencies": {
+    "reason-react": "^0.2.3"
+  },
+  "devDependencies": {
+    "bs-loader": "^1.5.8",
+    "bs-platform": "^1.8.2"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [
+    "gatsby",
+    "reason"
+  ],
+  "author": "Jason Rose <jasoncrose@gmail.com>",
+  "license": "MIT"
+}
