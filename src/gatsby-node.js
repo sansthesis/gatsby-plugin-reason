@@ -2,7 +2,7 @@
 
 import { process } from 'bs-loader';
 
-module.exports.resolvableExtensions = () => [".re", ".ml"]
+module.exports.resolvableExtensions = () => [".re", ".ml"];
 
 module.exports.modifyWebpackConfig = ({ config }) => {
   config.loader("reason", {
