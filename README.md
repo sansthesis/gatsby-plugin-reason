@@ -2,7 +2,7 @@
 Provides drop-in support for [Reason](https://reasonml.github.io/).
 
 ## Install
-`yarn add gatsby-plugin-reason bs-loader bs-platform reason-react`
+`yarn add gatsby-plugin-reason bs-loader bs-platform reason-react --save`
 
 ## How to use
 1. Include the plugin in your `gatsby-config.js` file.
@@ -20,14 +20,17 @@ plugins: [
 ```json
 {
   "name": "my-project-name",
-  "sources": [
-    "src"
-  ],
+  "sources": [{
+    "dir": "src",
+    "subdirs": ["pages"]
+  }],
   "bs-dependencies": [
     "reason-react"
   ],
   "reason": {
     "react-jsx": 2
-  }
+  },
+  "package-specs": ["es6"]
 }
+
 ```
