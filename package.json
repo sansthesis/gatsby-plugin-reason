@@ -1,22 +1,23 @@
 {
   "name": "gatsby-plugin-reason",
-  "version": "1.0.0",
+  "version": "",
   "description": "Adds Reason support for Gatsby layouts and pages.",
   "main": "index.js",
   "dependencies": {
-    "reason-react": "^0.2.3"
-  },
-  "devDependencies": {
-    "bs-loader": "^1.5.8",
-    "bs-platform": "^1.8.2"
-  },
-  "scripts": {
-    "build": "webpack"
+    "babel-core": "^6.25.0",
+    "bs-loader": "^1.5.8"
   },
   "keywords": [
     "gatsby",
     "reason"
   ],
   "author": "Jason Rose <jasoncrose@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1"
+  },
+  "scripts": {
+    "build": "babel src --out-dir .",
+    "watch": "babel -w src --out-dir ."
+  }
 }
