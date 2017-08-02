@@ -29,8 +29,7 @@ plugins: [
   ],
   "reason": {
     "react-jsx": 2
-  },
-  "package-specs": ["es6"]
+  }
 }
 
 ```
